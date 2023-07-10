@@ -1,0 +1,21 @@
+[0;1;32m●[0m docker.service - Docker Application Container Engine
+     Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Mon 2023-07-10 23:37:23 EAT; 11min ago
+TriggeredBy: [0;1;32m●[0m docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 179191 (dockerd)
+      Tasks: 10
+     Memory: 20.7M
+     CGroup: /system.slice/docker.service
+             └─179191 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+Jul 10 23:37:19 barsu-HP-EliteBook-x360-1030-G2 dockerd[179191]: time="2023-07-10T23:37:19.225600533+03:00" level=warning msg="Your kernel does not support CPU realtime scheduler"
+Jul 10 23:37:19 barsu-HP-EliteBook-x360-1030-G2 dockerd[179191]: time="2023-07-10T23:37:19.225650536+03:00" level=warning msg="Your kernel does not support cgroup blkio weight"
+Jul 10 23:37:19 barsu-HP-EliteBook-x360-1030-G2 dockerd[179191]: time="2023-07-10T23:37:19.227346341+03:00" level=warning msg="Your kernel does not support cgroup blkio weight_device"
+Jul 10 23:37:19 barsu-HP-EliteBook-x360-1030-G2 dockerd[179191]: time="2023-07-10T23:37:19.232291338+03:00" level=info msg="Loading containers: start."
+Jul 10 23:37:20 barsu-HP-EliteBook-x360-1030-G2 dockerd[179191]: time="2023-07-10T23:37:20.435523919+03:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+Jul 10 23:37:21 barsu-HP-EliteBook-x360-1030-G2 dockerd[179191]: time="2023-07-10T23:37:21.842872359+03:00" level=info msg="Loading containers: done."
+Jul 10 23:37:22 barsu-HP-EliteBook-x360-1030-G2 dockerd[179191]: time="2023-07-10T23:37:22.617820399+03:00" level=info msg="Docker daemon" commit="20.10.21-0ubuntu1~20.04.2" graphdriver(s)=overlay2 version=20.10.21
+Jul 10 23:37:22 barsu-HP-EliteBook-x360-1030-G2 dockerd[179191]: time="2023-07-10T23:37:22.619109470+03:00" level=info msg="Daemon has completed initialization"
+Jul 10 23:37:23 barsu-HP-EliteBook-x360-1030-G2 systemd[1]: Started Docker Application Container Engine.
+Jul 10 23:37:23 barsu-HP-EliteBook-x360-1030-G2 dockerd[179191]: time="2023-07-10T23:37:23.388060088+03:00" level=info msg="API listen on /run/docker.sock"
