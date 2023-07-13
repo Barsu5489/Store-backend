@@ -36,9 +36,9 @@ class Product extends Model
     /**
      * Get the payments made for the product.
      */
-    public function payments()
-    {
-        return $this->hasMany(Payment::class);
-    }
+    // public function payments()
+    // {
+    //     return $this->hasMany(Payment::class);
+    // }
 }
 
