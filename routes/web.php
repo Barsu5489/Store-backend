@@ -1,21 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CartController;
-use App\Http\Controllers\OrderController;
-use App\Http\Controllers\ProductController;
-use App\Http\Controllers\UserController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+Route::resource('orders', \App\Http\Controllers\OrderController::class);
+Route::resource('carts', \App\Http\Controllers\CartController::class);
+Route::resource('products', \App\Http\Controllers\ProductController::class);
+Route::resource('users', \App\Http\Controllers\UserController::class);
+Route::resource('images', \App\Http\Controllers\ImageController::class);
 
 Route::get('/', function () {
     return view('welcome');
