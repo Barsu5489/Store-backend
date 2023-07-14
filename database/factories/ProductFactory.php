@@ -29,9 +29,9 @@ class ProductFactory extends Factory
     {
         return $this->afterCreating(function (Product $product) {
             $product->images()->createMany([
-                ['image_path' => $this->faker->imageUrl(640, 480, 'technics', true)],
-                ['image_path' => $this->faker->imageUrl(640, 480, 'technics', true)],
-                ['image_path' => $this->faker->imageUrl(640, 480, 'technics', true)],
+                ['image_path' => 'https://picsum.photos/640/480?random=1'],
+                ['image_path' => 'https://picsum.photos/640/480?random=2'],
+                ['image_path' => 'https://picsum.photos/640/480?random=3'],
             ]);
         });
     }

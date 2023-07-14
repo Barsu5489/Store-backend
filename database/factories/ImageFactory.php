@@ -22,11 +22,13 @@ class ImageFactory extends Factory
      */
     public function definition(): array
     {
+        $faker = new Faker();
+
         return [
             'product_id' => function () {
                 return factory(App\Models\Product::class)->create()->id;
             },
-            'image_path' => asset($faker->image('public/storage/images', 640, 480, null, false)),
+            'image_path' =>  $this->faker->imageUrl(640, 480, 'technics', true),
         ];
     }
 }
