@@ -12,10 +12,10 @@ class OrderController extends Controller
      */
     public function index()
     {
-        $product = Product::all();
+        $orders = Order::all();
 
         // Return a JSON response with all the users
-        return response()->json($product);
+        return response()->json($orders);
     }
 
     /**
