@@ -12,7 +12,10 @@ class ImageController extends Controller
      */
     public function index()
     {
-        //
+        $imagess = Image::all();
+
+        // Return a JSON response with all the users
+        return response()->json($imagess);
     }
 
     /**
